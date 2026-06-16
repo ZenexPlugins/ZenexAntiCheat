@@ -1,0 +1,29 @@
+name: ZenexAntiCheat
+version: 1.0.0
+api-version: 1.21
+main: com.zenex.anticheat.ZenexAntiCheat
+author: ZenexPlugins
+description: 🛡️ Продвинутая система защиты от читов
+
+commands:
+  anticheat:
+    description: Главная команда античита
+    usage: /anticheat <reload|info|alerts|check>
+    aliases: [ac, античит]
+  
+  acadmin:
+    description: Административные команды
+    usage: /acadmin <reload|ban|warn|clear|check|stats>
+    permission: zenexanticheat.admin
+    aliases: [aca]
+
+permissions:
+  zenexanticheat.admin:
+    description: Административные права
+    default: op
+  zenexanticheat.alerts:
+    description: Видеть предупреждения
+    default: op
+  zenexanticheat.bypass:
+    description: Обход проверок
+    default: op

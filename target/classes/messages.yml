@@ -1,0 +1,23 @@
+# =====================================================
+# ZenexAntiCheat - Сообщения
+# =====================================================
+
+messages:
+  # === АДМИНИСТРАТОР ===
+  no-permission: "&c❌ У вас нет прав!"
+  reload: "&a✅ Античит перезагружен!"
+  player-not-found: "&c❌ Игрок не найден!"
+  
+  # === ПРЕДУПРЕЖДЕНИЯ ===
+  alert: "&c[AC] &7{player} &cнарушил &e{check} &7(VL: {vl})"
+  
+  # === НАКАЗАНИЯ ===
+  punishment-warn: "&c⚠️ {player}, не используйте читы! ({check})"
+  punishment-kick: "&c❌ Вы были кикнуты за читы! ({check})"
+  punishment-ban: "&c❌ Вы забанены за читы! ({check})"
+  
+  # === КОМАНДЫ ===
+  command-usage: "&c/anticheat <reload|info|alerts|check>"
+  command-info: "&6=== ZenexAntiCheat Info ===\n&7Версия: &e{version}\n&7Режим: &e{mode}\n&7Проверок активно: &e{checks}"
+  command-alerts-on: "&a✅ Предупреждения включены!"
+  command-alerts-off: "&c❌ Предупреждения выключены!"

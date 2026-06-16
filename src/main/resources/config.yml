@@ -1,0 +1,132 @@
+# =====================================================
+# ZenexAntiCheat - Конфигурация
+# =====================================================
+
+# Включить античит
+enabled: true
+
+# Режим: NORMAL, STRICT, DEBUG
+mode: NORMAL
+
+# =====================================================
+# НАСТРОЙКИ ПРОВЕРОК
+# =====================================================
+
+checks:
+  # === ДВИЖЕНИЕ ===
+  speed:
+    enabled: true
+    max-speed: 8.0
+    buffer: 0.25
+    punishment: WARN
+    vl-threshold: 20
+  
+  fly:
+    enabled: true
+    max-fall-distance: 50
+    buffer: 0.3
+    punishment: WARN
+    vl-threshold: 15
+  
+  nofall:
+    enabled: true
+    min-fall-distance: 3.0
+    buffer: 0.2
+    punishment: WARN
+    vl-threshold: 10
+  
+  jesus:
+    enabled: true
+    max-water-time: 3.0
+    buffer: 0.1
+    punishment: WARN
+    vl-threshold: 8
+  
+  phase:
+    enabled: true
+    punishment: BAN
+    vl-threshold: 5
+
+  # === БОЙ ===
+  killaura:
+    enabled: true
+    max-cps: 20
+    rotation-threshold: 45
+    buffer: 0.2
+    punishment: BAN
+    vl-threshold: 10
+  
+  reach:
+    enabled: true
+    max-reach: 3.5
+    buffer: 0.1
+    punishment: WARN
+    vl-threshold: 8
+  
+  velocity:
+    enabled: true
+    min-velocity: 0.5
+    max-velocity: 1.2
+    buffer: 0.15
+    punishment: WARN
+    vl-threshold: 10
+  
+  autoclicker:
+    enabled: true
+    max-cps: 16
+    min-cps: 6
+    deviation: 0.2
+    punishment: WARN
+    vl-threshold: 15
+
+  # === ВЗАИМОДЕЙСТВИЕ ===
+  fastplace:
+    enabled: true
+    max-block-per-second: 15
+    buffer: 0.1
+    punishment: WARN
+    vl-threshold: 12
+  
+  fastbreak:
+    enabled: true
+    max-break-per-second: 10
+    buffer: 0.1
+    punishment: WARN
+    vl-threshold: 10
+
+# =====================================================
+# НАСТРОЙКИ НАКАЗАНИЙ
+# =====================================================
+
+punishments:
+  WARN:
+    enabled: true
+    message: true
+    cooldown: 60
+  
+  KICK:
+    enabled: true
+    message: "&cЧиты запрещены!"
+    cooldown: 120
+  
+  BAN:
+    enabled: true
+    reason: "&cИспользование читов"
+    duration: 3600
+    message: true
+
+# =====================================================
+# НАСТРОЙКИ ОПОВЕЩЕНИЙ
+# =====================================================
+
+alerts:
+  chat: true
+  console: true
+
+# =====================================================
+# НАСТРОЙКИ ОПТИМИЗАЦИИ
+# =====================================================
+
+performance:
+  tick-delay: 1
+  async-checks: true
